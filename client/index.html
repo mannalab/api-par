@@ -1,0 +1,54 @@
+<style>
+    body {
+        background-color: #00a7a5;
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content {
+        background-color: white;
+        text-align: center;
+        padding: 20px 50px;
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div style="text-align: center;">
+            <img src="https://api.manna.team/uploads/logo_847f87a208.png"
+                alt="Logo BêraPar" width="200" />
+            <section class="content" id="content"></section>
+        </div>
+    </div>
+    <script>
+        var url_string = window.location.href;
+        var url = new URL(url_string);
+        var token = url.searchParams.get("access_token");
+        console.log(token);
+        if (token == null) {
+            document.getElementById("content").innerHTML = `<h1>Página não encontrada</h1>`
+        } else {
+            document.getElementById("content").innerHTML = `<form action="/api/Usuarios/reset-password?access_token=${token}" method="post">
+                <fieldset>
+                    <legend>Formulário de Definição de Nova Senha</legend>
+                    <p>&nbsp;</p>
+                    <div>
+                        <label for="password">Nova senha:</label>
+                        <input type="password" name="newPassword">
+                    </div>
+                    <p>&nbsp;</p>
+                    <div>
+                        <input type="submit" value="Definir nova senha">
+                    </div>
+                </fieldset>
+            </form>`
+        }
+    </script>
+</body>

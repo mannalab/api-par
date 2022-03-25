@@ -1,0 +1,2721 @@
+paths:
+  '/Usuarios/{id}/accessTokens/{fk}':
+    get:
+      tags:
+        - Usuario
+      summary: Find a related item by id for accessTokens.
+      operationId: Usuario.prototype.__findById__accessTokens
+      parameters:
+        - name: id
+          in: path
+          description: Usuario id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Foreign key for accessTokens
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/AccessToken'
+      deprecated: false
+    delete:
+      tags:
+        - Usuario
+      summary: Delete a related item by id for accessTokens.
+      operationId: Usuario.prototype.__destroyById__accessTokens
+      parameters:
+        - name: id
+          in: path
+          description: Usuario id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Foreign key for accessTokens
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+    put:
+      tags:
+        - Usuario
+      summary: Update a related item by id for accessTokens.
+      operationId: Usuario.prototype.__updateById__accessTokens
+      parameters:
+        - name: id
+          in: path
+          description: Usuario id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Foreign key for accessTokens
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/AccessToken'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/AccessToken'
+      deprecated: false
+  '/Usuarios/{id}/formularios/{fk}':
+    get:
+      tags:
+        - Usuario
+      summary: Find a related item by id for formularios.
+      operationId: Usuario.prototype.__findById__formularios
+      parameters:
+        - name: id
+          in: path
+          description: Usuario id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Foreign key for formularios
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulario'
+      deprecated: false
+    delete:
+      tags:
+        - Usuario
+      summary: Delete a related item by id for formularios.
+      operationId: Usuario.prototype.__destroyById__formularios
+      parameters:
+        - name: id
+          in: path
+          description: Usuario id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Foreign key for formularios
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+    put:
+      tags:
+        - Usuario
+      summary: Update a related item by id for formularios.
+      operationId: Usuario.prototype.__updateById__formularios
+      parameters:
+        - name: id
+          in: path
+          description: Usuario id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Foreign key for formularios
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Formulario'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulario'
+      deprecated: false
+  '/Usuarios/{id}/accessTokens':
+    get:
+      tags:
+        - Usuario
+      summary: Queries accessTokens of Usuario.
+      operationId: Usuario.prototype.__get__accessTokens
+      parameters:
+        - name: id
+          in: path
+          description: Usuario id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/AccessToken'
+      deprecated: false
+    post:
+      tags:
+        - Usuario
+      summary: Creates a new instance in accessTokens of this model.
+      operationId: Usuario.prototype.__create__accessTokens
+      parameters:
+        - name: id
+          in: path
+          description: Usuario id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/AccessToken'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/AccessToken'
+      deprecated: false
+    delete:
+      tags:
+        - Usuario
+      summary: Deletes all accessTokens of this model.
+      operationId: Usuario.prototype.__delete__accessTokens
+      parameters:
+        - name: id
+          in: path
+          description: Usuario id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/Usuarios/{id}/accessTokens/count':
+    get:
+      tags:
+        - Usuario
+      summary: Counts accessTokens of Usuario.
+      operationId: Usuario.prototype.__count__accessTokens
+      parameters:
+        - name: id
+          in: path
+          description: Usuario id
+          required: true
+          type: string
+          format: JSON
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  '/Usuarios/{id}/formularios':
+    get:
+      tags:
+        - Usuario
+      summary: Queries formularios of Usuario.
+      operationId: Usuario.prototype.__get__formularios
+      parameters:
+        - name: id
+          in: path
+          description: Usuario id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Formulario'
+      deprecated: false
+    post:
+      tags:
+        - Usuario
+      summary: Creates a new instance in formularios of this model.
+      operationId: Usuario.prototype.__create__formularios
+      parameters:
+        - name: id
+          in: path
+          description: Usuario id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Formulario'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulario'
+      deprecated: false
+    delete:
+      tags:
+        - Usuario
+      summary: Deletes all formularios of this model.
+      operationId: Usuario.prototype.__delete__formularios
+      parameters:
+        - name: id
+          in: path
+          description: Usuario id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/Usuarios/{id}/formularios/count':
+    get:
+      tags:
+        - Usuario
+      summary: Counts formularios of Usuario.
+      operationId: Usuario.prototype.__count__formularios
+      parameters:
+        - name: id
+          in: path
+          description: Usuario id
+          required: true
+          type: string
+          format: JSON
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /Usuarios:
+    post:
+      tags:
+        - Usuario
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: Usuario.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Usuario'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Usuario'
+      deprecated: false
+    patch:
+      tags:
+        - Usuario
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
+      operationId: Usuario.patchOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Usuario'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Usuario'
+      deprecated: false
+    put:
+      tags:
+        - Usuario
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      operationId: Usuario.replaceOrCreate__put_Usuarios
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Usuario'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Usuario'
+      deprecated: false
+    get:
+      tags:
+        - Usuario
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: Usuario.find
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+            See
+            https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+            for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Usuario'
+      deprecated: false
+  /Usuarios/replaceOrCreate:
+    post:
+      tags:
+        - Usuario
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      operationId: Usuario.replaceOrCreate__post_Usuarios_replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Usuario'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Usuario'
+      deprecated: false
+  /Usuarios/upsertWithWhere:
+    post:
+      tags:
+        - Usuario
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
+      operationId: Usuario.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Usuario'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Usuario'
+      deprecated: false
+  '/Usuarios/{id}/exists':
+    get:
+      tags:
+        - Usuario
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'Usuario.exists__get_Usuarios_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/Usuarios/{id}':
+    head:
+      tags:
+        - Usuario
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'Usuario.exists__head_Usuarios_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - Usuario
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: Usuario.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields and include - must be a JSON-encoded string
+            ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Usuario'
+      deprecated: false
+    put:
+      tags:
+        - Usuario
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
+      operationId: 'Usuario.replaceById__put_Usuarios_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Usuario'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Usuario'
+      deprecated: false
+    delete:
+      tags:
+        - Usuario
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: Usuario.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    patch:
+      tags:
+        - Usuario
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
+      operationId: Usuario.prototype.patchAttributes
+      parameters:
+        - name: id
+          in: path
+          description: Usuario id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Usuario'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Usuario'
+      deprecated: false
+  '/Usuarios/{id}/replace':
+    post:
+      tags:
+        - Usuario
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
+      operationId: 'Usuario.replaceById__post_Usuarios_{id}_replace'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Usuario'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Usuario'
+      deprecated: false
+  /Usuarios/findOne:
+    get:
+      tags:
+        - Usuario
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: Usuario.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+            See
+            https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+            for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Usuario'
+      deprecated: false
+  /Usuarios/update:
+    post:
+      tags:
+        - Usuario
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: Usuario.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Usuario'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /Usuarios/count:
+    get:
+      tags:
+        - Usuario
+      summary: Count instances of the model matched by where from the data source.
+      operationId: Usuario.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /Usuarios/login:
+    post:
+      tags:
+        - Usuario
+      summary: Login a user with username/email and password.
+      operationId: Usuario.login
+      parameters:
+        - name: credentials
+          in: body
+          required: true
+          schema:
+            type: object
+        - name: include
+          in: query
+          description: >-
+            Related objects to include in the response. See the description of
+            return value for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: >+
+              The response body contains properties of the AccessToken created
+              on login.
+
+              Depending on the value of `include` parameter, the body may
+              contain additional properties:
+
+                - `user` - `U+007BUserU+007D` - Data of the currently logged in user. (`include=user`)
+
+            type: object
+      deprecated: false
+  /Usuarios/logout:
+    post:
+      tags:
+        - Usuario
+      summary: Logout a user with access token.
+      operationId: Usuario.logout
+      parameters: []
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/Usuarios/{id}/verify':
+    post:
+      tags:
+        - Usuario
+      summary: Trigger user's identity verification with configured verifyOptions
+      operationId: Usuario.prototype.verify
+      parameters:
+        - name: id
+          in: path
+          description: Usuario id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  /Usuarios/confirm:
+    get:
+      tags:
+        - Usuario
+      summary: Confirm a user registration with identity verification token.
+      operationId: Usuario.confirm
+      parameters:
+        - name: uid
+          in: query
+          required: true
+          type: string
+        - name: token
+          in: query
+          required: true
+          type: string
+        - name: redirect
+          in: query
+          required: false
+          type: string
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  /Usuarios/reset:
+    post:
+      tags:
+        - Usuario
+      summary: Reset password for a user with email.
+      operationId: Usuario.resetPassword
+      parameters:
+        - name: options
+          in: body
+          required: true
+          schema:
+            type: object
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  /Usuarios/change-password:
+    post:
+      tags:
+        - Usuario
+      summary: Change a user's password.
+      operationId: Usuario.changePassword
+      parameters:
+        - name: oldPassword
+          in: formData
+          required: true
+          type: string
+        - name: newPassword
+          in: formData
+          required: true
+          type: string
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  /Usuarios/reset-password:
+    post:
+      tags:
+        - Usuario
+      summary: Reset user's password via a password-reset token.
+      operationId: Usuario.setPassword
+      parameters:
+        - name: newPassword
+          in: formData
+          required: true
+          type: string
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/Formularios/{id}/local':
+    get:
+      tags:
+        - Formulario
+      summary: Fetches belongsTo relation local.
+      operationId: Formulario.prototype.__get__local
+      parameters:
+        - name: id
+          in: path
+          description: Formulario id
+          required: true
+          type: string
+          format: JSON
+        - name: refresh
+          in: query
+          required: false
+          type: boolean
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Local'
+      deprecated: false
+  /Formularios:
+    post:
+      tags:
+        - Formulario
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: Formulario.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Formulario'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulario'
+      deprecated: false
+    patch:
+      tags:
+        - Formulario
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
+      operationId: Formulario.patchOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Formulario'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulario'
+      deprecated: false
+    put:
+      tags:
+        - Formulario
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      operationId: Formulario.replaceOrCreate__put_Formularios
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Formulario'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulario'
+      deprecated: false
+    get:
+      tags:
+        - Formulario
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: Formulario.find
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+            See
+            https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+            for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Formulario'
+      deprecated: false
+  /Formularios/replaceOrCreate:
+    post:
+      tags:
+        - Formulario
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      operationId: Formulario.replaceOrCreate__post_Formularios_replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Formulario'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulario'
+      deprecated: false
+  /Formularios/upsertWithWhere:
+    post:
+      tags:
+        - Formulario
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
+      operationId: Formulario.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Formulario'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulario'
+      deprecated: false
+  '/Formularios/{id}/exists':
+    get:
+      tags:
+        - Formulario
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'Formulario.exists__get_Formularios_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/Formularios/{id}':
+    head:
+      tags:
+        - Formulario
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'Formulario.exists__head_Formularios_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - Formulario
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: Formulario.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields and include - must be a JSON-encoded string
+            ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulario'
+      deprecated: false
+    put:
+      tags:
+        - Formulario
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
+      operationId: 'Formulario.replaceById__put_Formularios_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Formulario'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulario'
+      deprecated: false
+    delete:
+      tags:
+        - Formulario
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: Formulario.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    patch:
+      tags:
+        - Formulario
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
+      operationId: Formulario.prototype.patchAttributes
+      parameters:
+        - name: id
+          in: path
+          description: Formulario id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Formulario'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulario'
+      deprecated: false
+  '/Formularios/{id}/replace':
+    post:
+      tags:
+        - Formulario
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
+      operationId: 'Formulario.replaceById__post_Formularios_{id}_replace'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Formulario'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulario'
+      deprecated: false
+  /Formularios/findOne:
+    get:
+      tags:
+        - Formulario
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: Formulario.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+            See
+            https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+            for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulario'
+      deprecated: false
+  /Formularios/update:
+    post:
+      tags:
+        - Formulario
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: Formulario.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Formulario'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /Formularios/count:
+    get:
+      tags:
+        - Formulario
+      summary: Count instances of the model matched by where from the data source.
+      operationId: Formulario.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  '/Formularios/{id}/local/formularios/{fk}':
+    get:
+      tags:
+        - Formulario
+      summary: Find a related item by id for formularios.
+      operationId: Formulario.prototype.__findById__local__formularios
+      parameters:
+        - name: id
+          in: path
+          description: Formulario id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Foreign key for formularios
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulario'
+      deprecated: false
+    delete:
+      tags:
+        - Formulario
+      summary: Delete a related item by id for formularios.
+      operationId: Formulario.prototype.__destroyById__local__formularios
+      parameters:
+        - name: id
+          in: path
+          description: Formulario id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Foreign key for formularios
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+    put:
+      tags:
+        - Formulario
+      summary: Update a related item by id for formularios.
+      operationId: Formulario.prototype.__updateById__local__formularios
+      parameters:
+        - name: id
+          in: path
+          description: Formulario id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Foreign key for formularios
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Formulario'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulario'
+      deprecated: false
+  '/Formularios/{id}/local/formularios':
+    get:
+      tags:
+        - Formulario
+      summary: Queries formularios of Local.
+      operationId: Formulario.prototype.__get__local__formularios
+      parameters:
+        - name: id
+          in: path
+          description: Formulario id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Formulario'
+      deprecated: false
+    post:
+      tags:
+        - Formulario
+      summary: Creates a new instance in formularios of this model.
+      operationId: Formulario.prototype.__create__local__formularios
+      parameters:
+        - name: id
+          in: path
+          description: Formulario id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Formulario'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulario'
+      deprecated: false
+    delete:
+      tags:
+        - Formulario
+      summary: Deletes all formularios of this model.
+      operationId: Formulario.prototype.__delete__local__formularios
+      parameters:
+        - name: id
+          in: path
+          description: Formulario id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/Formularios/{id}/local/formularios/count':
+    get:
+      tags:
+        - Formulario
+      summary: Counts formularios of Local.
+      operationId: Formulario.prototype.__count__local__formularios
+      parameters:
+        - name: id
+          in: path
+          description: Formulario id
+          required: true
+          type: string
+          format: JSON
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  '/Locais/{id}/formularios/{fk}':
+    get:
+      tags:
+        - Local
+      summary: Find a related item by id for formularios.
+      operationId: Local.prototype.__findById__formularios
+      parameters:
+        - name: id
+          in: path
+          description: Local id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Foreign key for formularios
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulario'
+      deprecated: false
+    delete:
+      tags:
+        - Local
+      summary: Delete a related item by id for formularios.
+      operationId: Local.prototype.__destroyById__formularios
+      parameters:
+        - name: id
+          in: path
+          description: Local id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Foreign key for formularios
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+    put:
+      tags:
+        - Local
+      summary: Update a related item by id for formularios.
+      operationId: Local.prototype.__updateById__formularios
+      parameters:
+        - name: id
+          in: path
+          description: Local id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Foreign key for formularios
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Formulario'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulario'
+      deprecated: false
+  '/Locais/{id}/formularios':
+    get:
+      tags:
+        - Local
+      summary: Queries formularios of Local.
+      operationId: Local.prototype.__get__formularios
+      parameters:
+        - name: id
+          in: path
+          description: Local id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Formulario'
+      deprecated: false
+    post:
+      tags:
+        - Local
+      summary: Creates a new instance in formularios of this model.
+      operationId: Local.prototype.__create__formularios
+      parameters:
+        - name: id
+          in: path
+          description: Local id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Formulario'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulario'
+      deprecated: false
+    delete:
+      tags:
+        - Local
+      summary: Deletes all formularios of this model.
+      operationId: Local.prototype.__delete__formularios
+      parameters:
+        - name: id
+          in: path
+          description: Local id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/Locais/{id}/formularios/count':
+    get:
+      tags:
+        - Local
+      summary: Counts formularios of Local.
+      operationId: Local.prototype.__count__formularios
+      parameters:
+        - name: id
+          in: path
+          description: Local id
+          required: true
+          type: string
+          format: JSON
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /Locais:
+    post:
+      tags:
+        - Local
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: Local.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Local'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Local'
+      deprecated: false
+    patch:
+      tags:
+        - Local
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
+      operationId: Local.patchOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Local'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Local'
+      deprecated: false
+    put:
+      tags:
+        - Local
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      operationId: Local.replaceOrCreate__put_Locais
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Local'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Local'
+      deprecated: false
+    get:
+      tags:
+        - Local
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: Local.find
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+            See
+            https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+            for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Local'
+      deprecated: false
+  /Locais/replaceOrCreate:
+    post:
+      tags:
+        - Local
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      operationId: Local.replaceOrCreate__post_Locais_replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Local'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Local'
+      deprecated: false
+  /Locais/upsertWithWhere:
+    post:
+      tags:
+        - Local
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
+      operationId: Local.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Local'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Local'
+      deprecated: false
+  '/Locais/{id}/exists':
+    get:
+      tags:
+        - Local
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'Local.exists__get_Locais_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/Locais/{id}':
+    head:
+      tags:
+        - Local
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'Local.exists__head_Locais_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - Local
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: Local.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields and include - must be a JSON-encoded string
+            ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Local'
+      deprecated: false
+    put:
+      tags:
+        - Local
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
+      operationId: 'Local.replaceById__put_Locais_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Local'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Local'
+      deprecated: false
+    delete:
+      tags:
+        - Local
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: Local.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    patch:
+      tags:
+        - Local
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
+      operationId: Local.prototype.patchAttributes
+      parameters:
+        - name: id
+          in: path
+          description: Local id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Local'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Local'
+      deprecated: false
+  '/Locais/{id}/replace':
+    post:
+      tags:
+        - Local
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
+      operationId: 'Local.replaceById__post_Locais_{id}_replace'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Local'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Local'
+      deprecated: false
+  /Locais/findOne:
+    get:
+      tags:
+        - Local
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: Local.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+            See
+            https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+            for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Local'
+      deprecated: false
+  /Locais/update:
+    post:
+      tags:
+        - Local
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: Local.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Local'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /Locais/count:
+    get:
+      tags:
+        - Local
+      summary: Count instances of the model matched by where from the data source.
+      operationId: Local.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  '/Locais/{id}/formularios/{nk}/local':
+    get:
+      tags:
+        - Local
+      summary: Fetches belongsTo relation local.
+      operationId: Local.prototype.__get__formularios__local
+      parameters:
+        - name: id
+          in: path
+          description: Local id
+          required: true
+          type: string
+          format: JSON
+        - name: nk
+          in: path
+          description: Foreign key for formularios.
+          required: true
+          type: string
+          format: JSON
+        - name: refresh
+          in: query
+          required: false
+          type: boolean
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Local'
+      deprecated: false
+  /Formulariobasaltos:
+    post:
+      tags:
+        - Formulariobasalto
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: Formulariobasalto.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Formulariobasalto'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulariobasalto'
+      deprecated: false
+    patch:
+      tags:
+        - Formulariobasalto
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
+      operationId: Formulariobasalto.patchOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Formulariobasalto'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulariobasalto'
+      deprecated: false
+    put:
+      tags:
+        - Formulariobasalto
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      operationId: Formulariobasalto.replaceOrCreate__put_Formulariobasaltos
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Formulariobasalto'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulariobasalto'
+      deprecated: false
+    get:
+      tags:
+        - Formulariobasalto
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: Formulariobasalto.find
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+            See
+            https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+            for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Formulariobasalto'
+      deprecated: false
+  /Formulariobasaltos/replaceOrCreate:
+    post:
+      tags:
+        - Formulariobasalto
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      operationId: >-
+        Formulariobasalto.replaceOrCreate__post_Formulariobasaltos_replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Formulariobasalto'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulariobasalto'
+      deprecated: false
+  /Formulariobasaltos/upsertWithWhere:
+    post:
+      tags:
+        - Formulariobasalto
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
+      operationId: Formulariobasalto.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Formulariobasalto'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulariobasalto'
+      deprecated: false
+  '/Formulariobasaltos/{id}/exists':
+    get:
+      tags:
+        - Formulariobasalto
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'Formulariobasalto.exists__get_Formulariobasaltos_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/Formulariobasaltos/{id}':
+    head:
+      tags:
+        - Formulariobasalto
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'Formulariobasalto.exists__head_Formulariobasaltos_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - Formulariobasalto
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: Formulariobasalto.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields and include - must be a JSON-encoded string
+            ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulariobasalto'
+      deprecated: false
+    put:
+      tags:
+        - Formulariobasalto
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
+      operationId: 'Formulariobasalto.replaceById__put_Formulariobasaltos_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Formulariobasalto'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulariobasalto'
+      deprecated: false
+    delete:
+      tags:
+        - Formulariobasalto
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: Formulariobasalto.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    patch:
+      tags:
+        - Formulariobasalto
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
+      operationId: Formulariobasalto.prototype.patchAttributes
+      parameters:
+        - name: id
+          in: path
+          description: Formulariobasalto id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Formulariobasalto'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulariobasalto'
+      deprecated: false
+  '/Formulariobasaltos/{id}/replace':
+    post:
+      tags:
+        - Formulariobasalto
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
+      operationId: 'Formulariobasalto.replaceById__post_Formulariobasaltos_{id}_replace'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Formulariobasalto'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulariobasalto'
+      deprecated: false
+  /Formulariobasaltos/findOne:
+    get:
+      tags:
+        - Formulariobasalto
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: Formulariobasalto.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+            See
+            https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+            for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Formulariobasalto'
+      deprecated: false
+  /Formulariobasaltos/update:
+    post:
+      tags:
+        - Formulariobasalto
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: Formulariobasalto.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Formulariobasalto'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /Formulariobasaltos/count:
+    get:
+      tags:
+        - Formulariobasalto
+      summary: Count instances of the model matched by where from the data source.
+      operationId: Formulariobasalto.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+definitions:
+  x-any:
+    properties: {}
+  AccessToken:
+    properties:
+      id:
+        type: string
+      ttl:
+        default: 1209600
+        description: time to live in seconds (2 weeks by default)
+        type: number
+        format: double
+      scopes:
+        description: Array of scopes granted to this access token.
+        type: array
+        items:
+          type: string
+      created:
+        type: string
+        format: date-time
+      userId:
+        type: number
+        format: double
+    required:
+      - id
+    additionalProperties: false
+  Formulario:
+    properties:
+      nomeAvaliador:
+        maxLength: 120
+        type: string
+      idLocal:
+        type: number
+        format: double
+      tempo:
+        maxLength: 120
+        type: string
+      choveu:
+        type: number
+        format: double
+      dataHora:
+        type: string
+        format: date-time
+      parametro1:
+        type: number
+        format: double
+      parametro2:
+        type: number
+        format: double
+      parametro3:
+        type: number
+        format: double
+      parametro4:
+        type: number
+        format: double
+      parametro5a:
+        type: number
+        format: double
+      parametro5b:
+        type: number
+        format: double
+      parametro6:
+        type: number
+        format: double
+      parametro7me:
+        type: number
+        format: double
+      parametro7md:
+        type: number
+        format: double
+      parametro8me:
+        type: number
+        format: double
+      parametro8md:
+        type: number
+        format: double
+      parametro9me:
+        type: number
+        format: double
+      parametro9md:
+        type: number
+        format: double
+      soma:
+        type: number
+        format: double
+      idAvaliador:
+        type: number
+        format: double
+      observacoes:
+        maxLength: 500
+        type: string
+      images:
+        type: array
+        items:
+          $ref: '#/definitions/x-any'
+      image_captions:
+        type: array
+        items:
+          $ref: '#/definitions/x-any'
+      id:
+        type: number
+        format: double
+    required:
+      - nomeAvaliador
+      - idLocal
+      - tempo
+      - choveu
+      - dataHora
+      - parametro1
+      - parametro2
+      - parametro3
+      - parametro4
+      - parametro5a
+      - parametro5b
+      - parametro6
+      - parametro7me
+      - parametro7md
+      - parametro8me
+      - parametro8md
+      - parametro9me
+      - parametro9md
+      - soma
+      - idAvaliador
+    additionalProperties: false
+  Usuario:
+    properties:
+      nome:
+        maxLength: 120
+        type: string
+      email:
+        maxLength: 120
+        type: string
+      realm:
+        type: string
+      emailVerified:
+        type: boolean
+      id:
+        type: number
+        format: double
+    required:
+      - nome
+      - email
+    additionalProperties: false
+  Local:
+    properties:
+      nome:
+        maxLength: 120
+        type: string
+      descricao:
+        maxLength: 500
+        type: string
+      latitude:
+        maxLength: 20
+        type: string
+      longitude:
+        maxLength: 20
+        type: string
+      id:
+        type: number
+        format: double
+    required:
+      - nome
+      - latitude
+      - longitude
+    additionalProperties: false
+  Formulariobasalto:
+    properties:
+      id:
+        type: number
+        format: double
+      nomeAvaliador:
+        maxLength: 120
+        type: string
+      idLocal:
+        type: number
+        format: double
+      tempo:
+        maxLength: 120
+        type: string
+      choveu:
+        type: number
+        format: double
+      dataHora:
+        type: string
+        format: date-time
+      parametro1:
+        type: number
+        format: double
+      parametro2:
+        type: number
+        format: double
+      parametro3md:
+        type: number
+        format: double
+      parametro3me:
+        type: number
+        format: double
+      parametro4md:
+        type: number
+        format: double
+      parametro4me:
+        type: number
+        format: double
+      parametro5:
+        type: number
+        format: double
+      parametro6:
+        type: number
+        format: double
+      parametro7:
+        type: number
+        format: double
+      parametro8:
+        type: number
+        format: double
+      parametro9:
+        type: number
+        format: double
+      parametro10:
+        type: number
+        format: double
+      parametro11:
+        type: number
+        format: double
+      parametro12:
+        type: number
+        format: double
+      soma:
+        type: number
+        format: double
+      idAvaliador:
+        type: number
+        format: double
+      observacoes:
+        maxLength: 500
+        type: string
+      images:
+        maxLength: 4096
+        type: string
+      imageCaptions:
+        maxLength: 4096
+        type: string
+    required:
+      - id
+      - nomeAvaliador
+      - idLocal
+      - tempo
+      - choveu
+      - dataHora
+      - parametro1
+      - parametro2
+      - parametro3md
+      - parametro3me
+      - parametro4md
+      - parametro4me
+      - parametro5
+      - parametro6
+      - parametro7
+      - parametro8
+      - parametro9
+      - parametro10
+      - parametro11
+      - parametro12
+      - soma
+      - idAvaliador
+    additionalProperties: false
+basePath: /api
+swagger: '2.0'
+info:
+  x-ibm-name: api-par-2
+  version: 1.0.0
+  title: api-par-2
+schemes:
+  - https
+host: $(catalog.host)
+consumes:
+  - application/json
+produces:
+  - application/json
+securityDefinitions:
+  clientIdHeader:
+    type: apiKey
+    in: header
+    name: X-IBM-Client-Id
+  clientSecretHeader:
+    in: header
+    name: X-IBM-Client-Secret
+    type: apiKey
+security:
+  - clientIdHeader: []
+    clientSecretHeader: []
+x-ibm-configuration:
+  testable: true
+  enforced: true
+  cors:
+    enabled: true
+  catalogs:
+    apic-dev:
+      properties:
+        runtime-url: $(TARGET_URL)
+    sb:
+      properties:
+        runtime-url: 'http://localhost:4001'
+  assembly:
+    execute:
+      - invoke:
+          target-url: $(runtime-url)$(request.path)$(request.search)

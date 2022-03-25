@@ -1,0 +1,69 @@
+{
+  "name": "Usuario",
+  "plural": "Usuarios",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "excludeBaseProperties": [
+    "username"
+  ],
+  "mysql": {
+    "schema": "apppar",
+    "table": "usuario"
+  },
+  "properties": {
+    "nome": {
+      "type": "String",
+      "required": true,
+      "length": 120,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "nome",
+        "dataType": "varchar",
+        "dataLength": 120,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "email": {
+      "type": "String",
+      "required": true,
+      "length": 120,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "email",
+        "dataType": "varchar",
+        "dataLength": 120,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {
+    "formularios": {
+      "type": "hasMany",
+      "model": "Formulario",
+      "foreignKey": "idAvaliador",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "formulariosBasalto": {
+      "type": "hasMany",
+      "model": "Formulariobasalto",
+      "foreignKey": "idAvaliador",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

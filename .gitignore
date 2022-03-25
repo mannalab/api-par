@@ -1,0 +1,3 @@
+node_modules/
+storage/pars/*
+server/datasources.json.model

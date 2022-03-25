@@ -1,0 +1,38 @@
+<style>
+  body {
+    background-color: #00a7a5;
+  }
+
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content {
+    background-color: white;
+    text-align: center;
+    padding: 20px 50px;
+    border-radius: 10px;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div style="text-align: center;">
+      <img src="https://api.manna.team/uploads/logo_847f87a208.png" alt="Logo BêraPar" width="200" />
+      <div class="content">
+        <h1>
+          <%= title %>
+        </h1>
+        <% if (typeof content !=='undefined' ) { %>
+          <p>
+            <%= content %>
+          </p>
+          <% } %>
+      </div>
+    </div>
+  </div>
+</body>

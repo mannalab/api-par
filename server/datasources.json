@@ -1,0 +1,35 @@
+{
+  "db": {
+    "host": "DB_HOST",
+    "port": 3306,
+    "database": "DB_NAME",
+    "username": "DB_USER",
+    "password": "DB_PASSWORD",
+    "name": "db",
+    "connector": "mysql",
+    "user": "DB_USER"
+  },
+  "storage": {
+    "name": "storage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./storage"
+  },
+  "Email": {
+    "name": "Email",
+    "connector": "mail",
+    "transports": [{
+      "type": "smtp",
+      "host": "smtp-relay.sendinblue.com",
+      "secure": false,
+      "port": 587,
+      "tls": {
+        "rejectUnauthorized": false
+      },
+      "auth": {
+        "user": "SENDINBLUE_USER",
+        "pass": "SENDINBLUE_PASSWORD"
+      }
+    }]
+  }
+}
