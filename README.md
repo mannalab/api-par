@@ -17,16 +17,18 @@ Para o ambiente de desenvolvimento foram utilizados:
 
 **Variáveis**
 
-São necessárias duas etapas para que o projeto funcione corretamente:
+São necessárias três etapas para que o projeto funcione corretamente:
 
 - Criar um banco de dados a partir do [dump](./dump/Dump20220325.sql)
-- Informar [variáveis de ambiente](./server/datasources.json)
+- Informar [variáveis de ambiente de datasources](./server/datasources.json)
     - DB_HOST: IP ou URL de onde o banco de dados está hospedado
     - DB_NAME: nome da base de dados
     - DB_USER: nome do usuário para acesso à base de dados
     - DB_PASSWORD: senha de acesso à base de dados
     - SENDINBLUE_USER: nome de usuário na Sendinblue para envio de e-mails
     - SENDINBLUE_PASSWORD: senha da Sendinblue para envio de e-mails 
+- Informar [SENDINBLUE API KEY v3](./common/models/usuario.js)
+    - SENDINBLUE_V3_API_KEY: API Key v3 da Sendinblue para envio de e-mails
 
 ### Contribuidores ###
 - Luany Lessa Campos

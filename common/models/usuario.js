@@ -11,7 +11,7 @@ module.exports = function (Usuario) {
 
         // Configure API key authorization: api-key
         let apiKey = defaultClient.authentications['api-key'];
-        apiKey.apiKey = "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";
+        apiKey.apiKey = "SENDINBLUE_V3_API_KEY";
 
         let apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
 
@@ -29,7 +29,7 @@ module.exports = function (Usuario) {
                 link: url
             },
             headers: {
-                'api-key': "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",
+                'api-key': "SENDINBLUE_V3_API_KEY",
                 'content-type': 'application/json',
                 'accept': 'application/json',
             }
